@@ -1,0 +1,71 @@
+.img_pages{
+    position: absolute;
+    width: 375px;
+    height: 275px;
+    left: calc(50% - 375px/2);
+    top: 63px;
+}
+
+.header_pages{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages{
+    /* Background */
+
+
+    position: absolute;
+    width: 375px;
+    height: 1307px;
+    left: calc(50% - 375px/2);
+    top: 283px;
+
+/* Background */
+
+    background: #F7F7F7;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.pages_titre{
+    /* La palette du goût */
+
+
+    position: absolute;
+    width: 341px;
+    height: 27px;
+    left: 17px;
+    top: 0px;
+    margin-top: 30px;
+
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+
+/* Black */
+
+    color: $black;
+}
+
+.pages_st{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: $black;
+}
+.footer_pages{
+    z-index: auto;
+}
