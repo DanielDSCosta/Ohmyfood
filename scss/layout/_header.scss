@@ -1,0 +1,55 @@
+@use '../util/' as u;
+
+/*----- Header -----*/
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: var(--white);
+    height: u.rem(63);
+    @include u.shadow(u.rem(2), u.rem(4), 0.15, u.rem(0));
+    @include u.breakpoint(medium) {
+        height: u.em(96);
+        box-shadow: none;
+    }
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: u.rem(14);
+    @include u.breakpoint(medium) {
+        padding-top: u.rem(30);
+    }
+    &__link {
+            position: absolute;
+            left: u.rem(6);
+    }
+    &__logo {
+        width: u.rem(162);
+        height: u.rem(44);
+        @include u.breakpoint(medium) {
+            width: u.rem(200);
+        };
+    }
+    &__location { 
+         background-color: var(--background-grey-light);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: u.rem(50);
+         margin-top: u.rem(63);
+         @include u.breakpoint(medium) {
+             line-height: u.rem(18.75);
+             margin-top: u.rem(96);
+         };
+     }
+}
+    
+    

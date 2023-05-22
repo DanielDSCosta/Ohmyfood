@@ -1,40 +1,5 @@
-@import './resets';
-@import './variables';
-@import './index/header';
-@import './index/reservez';
-@import './index/fonctionnement';
-@import './index/restaurants';
-@import './index/footer';
-@import './pages/pages';
-
-
-body {
-    background-color: $white;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    min-width: 23.4375rem;
-  }
-  
-  h1, h2, h3, h4, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  a, a:visited, a:active {
-    text-decoration: none;
-  }
-  
-  li {
-    font-weight: 400;
-  }
-  
-  h1, h4 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-  }
-  
-  h1 {
-    font-size: 1.875em;
-  }
+@forward 'base';
+@forward 'layout';
+@forward 'components';
+@forward 'pages';
+@forward 'util';

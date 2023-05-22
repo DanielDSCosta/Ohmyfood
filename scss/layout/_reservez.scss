@@ -1,0 +1,27 @@
+@use '../util/' as u;
+
+/*----- Reservez -----*/
+.reservez {
+    text-align: center;
+    &__title {
+        margin: u.rem(39.5) u.rem(58) 0 u.rem(42);
+        padding-bottom: u.rem(18);
+        @include u.breakpoint(medium) {
+            font-size: u.rem(40);
+            line-height: u.rem(46.88);
+            margin: u.rem(30) u.rem(0) 0 u.rem(0);
+        }
+    }
+    &__subtitle {
+        margin-bottom: u.rem(27);
+        @include u.breakpoint(medium) {
+            margin-bottom: u.rem(31);
+        }
+    }
+    &__btn {
+        margin-bottom: u.rem(57);
+        @include u.breakpoint(medium) {
+            margin-bottom: u.rem(30);
+        }
+    }
+}

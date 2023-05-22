@@ -1,0 +1,106 @@
+@use '../util/' as u;
+
+ /*----- L'image de fond -----*/
+.image {
+    position: absolute;
+    width: 100%;
+    height: u.rem(275);
+    top: u.rem(63);
+    z-index: 0;
+    @include u.breakpoint(medium) {
+        height: u.rem(340);
+        top: u.rem(31);
+    }
+    @include u.breakpoint(large) {
+        height: u.rem(471);
+        top: 0;
+    }
+}
+
+/*----- Les Pages Menu -----*/
+.menuWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: u.rem(1275);
+    top: u.rem(252);
+    z-index: 10;
+    @include u.breakpoint(medium) {
+        top: u.rem(331)
+    }
+    @include u.breakpoint(large) {
+        top: u.rem(490)
+    }
+    &__title {
+        position: relative;
+        &--titre {
+            font-family: u.$font-shirkhand;
+            font-size: u.rem(28);
+            line-height: u.rem(40.82);
+            width: u.rem(341);
+            height: u.rem(27);
+        }
+        &--icon {
+            cursor: pointer;
+            overflow: visible;
+            width: u.rem(22);
+            position: absolute;
+            top: u.rem(8);
+            right: u.rem(24);
+            z-index: 10;
+        }
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 u.rem(13);
+        gap: u.rem(12);
+        @include u.breakpoint(medium) {
+            width: u.rem(634);
+        }
+        &--title {
+            position: relative;
+            height: u.rem(27);
+            text-transform: uppercase;
+            font-weight: 300;
+            line-height: u.rem(18.75);
+            width: u.rem(275);
+        }
+        &--borderLeft {
+            border-bottom: u.rem(3) solid var(--btn-green-light);
+            position: absolute;
+            top: u.rem(27);
+            left: 0;
+            width: u.rem(40);
+            
+          }
+    }
+}
+
+.background {
+    background-color: var(--background-color);
+    border-radius: u.rem(25) u.rem(25) 0 0;
+    position: absolute;
+    width: 100%;
+    max-width: u.rem(1055);
+    height: u.rem(1300);
+    top: u.rem(220);
+    z-index: 8;
+    @include u.breakpoint(medium) {
+        top: u.rem(292);
+        height: u.rem(1250);
+    }
+    @include u.breakpoint(large) {
+        top: u.rem(438);
+        left: calc(50% - u.rem(1055)/2);
+    } 
+}
+
+.footer {
+    width: 100%;
+}

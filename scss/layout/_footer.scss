@@ -1,0 +1,33 @@
+@use '../util/' as u;
+
+/*----- Footer -----*/
+.footer {
+    background-color: var(--background-grey-dark);
+    &__title {
+        color: var(--white);
+        height: u.rem(27);
+        width: u.rem(137);
+        line-height: u.rem(18.75);
+        @include u.breakpoint(medium) {
+            width: u.rem(153);
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(7);
+        @include u.breakpoint(medium) {
+            flex-direction: row;
+        }
+        &--grand {
+            width: u.rem(190);
+            height: u.rem(19);
+        }
+        &--petit {
+            font-weight: 400;
+            width: u.rem(130);
+            height: u.rem(20);
+        }
+    }
+} 
+

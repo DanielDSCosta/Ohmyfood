@@ -1,0 +1,128 @@
+@use '../util/' as u;
+
+/*----- Cards -----*/
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    @include u.shadow(u.rem(4), u.rem(15), 0.1, u.rem(15));
+    transition: all 500ms ease-in-out;
+    &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: u.rem(2) u.rem(3) u.rem(18) var(--btn-green-dark);
+        letter-spacing: u.rem(0.5);
+    }
+    &__img {
+        object-fit: cover;
+        width: 102%; 
+        height: u.rem(231);
+        margin: u.rem(-57) u.rem(-3)u.rem(-4)u.rem(-3);
+    } 
+    &__nouveau {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: u.rem(80);
+        height: u.rem(29);
+        border-radius: u.rem(2);
+        position: absolute;
+        top: u.rem(13);
+        right: u.rem(21);
+        background-color: var(--btn-green-light);
+        color: var(--btn-green-dark);
+        font-size: u.rem(14);
+    } 
+    &__title {
+        margin: u.rem(16) u.rem(60) u.rem(5) u.rem(13);
+
+    }
+    &__subtitle {
+        margin: 0 u.rem(80) u.rem(12) u.rem(13);
+    }
+    &__icon {
+        position: absolute;
+        bottom: u.rem(33);
+        right: u.rem(25);
+        background: url("../images/icon/heart.svg");
+        height: u.rem(21);
+        width: u.rem(22);
+        &:hover {
+            
+            background: url("../images/icon/heart-like.svg");
+            
+        }
+    }
+} 
+
+.menuCard {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: u.rem(69);
+    position: relative;
+    overflow: hidden;
+    @include u.shadow(u.rem(4), u.rem(15), 0.1, u.rem(15));
+    transition: box-shadow 1s ease-out;
+    &:hover {
+        @include u.shadow(u.rem(5), u.rem(5), 0.3, u.rem(15));
+    }
+    &__box {
+        flex: 1;
+        min-width: 0;
+        & h4, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: u.rem(15);
+        }
+        & h4 {
+            font-family: u.$font-roboto;
+            line-height: u.rem(18);
+            font-weight: 500;
+            font-weight: normal;
+        }
+        & p {
+            font-size: u.rem(15);
+            line-height: u.rem(17.63);
+            font-weight: 300;
+            margin-top: u.rem(5);
+        }
+    }
+    &__price {
+        line-height: u.rem(18);
+        font-weight: 700;
+        padding-top: u.rem(20);
+        padding-right: u.rem(13.5);
+        white-space: nowrap;
+        transition: margin-right 650ms ease-in-out;
+    }
+    &__selectBtn {
+        background-color: var(--btn-green-light);
+        border-radius: 0 u.rem(16) u.rem(16) 0;
+        position: absolute;
+        width: u.rem(59);
+        height: u.rem(69);
+        right: u.rem(-60);
+        top: 0;
+        transition: margin-right 650ms ease-in-out;
+        &--check {
+            position: absolute;
+            top: u.rem(25);
+            right: u.rem(20);
+            transform: rotate(360deg);
+            transition: transform 650ms ease-in-out;
+        }   
+    }
+    &:hover .menuCard__price {
+        margin-right: u.rem(60);
+    }
+    
+    &:hover .menuCard__selectBtn {
+        margin-right: u.rem(60);
+        &--check {
+            transform: rotate(0deg);
+        }
+    }
+  }
+

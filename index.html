@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh My Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="icon" href="./assets/images/icon/fork-knife.svg">
+</head>
+<body>
+
+
+
+    <!--***** Le Header *****-->
+
+    <header class="l-header">
+        <div class="nav grid">
+            <a class="nav__link" href="../index.html"><img src="../assets/images/icon/arrow-left.svg" hidden alt="lien icone fleche"></a>
+            <img class="nav__logo" src="./assets/images/logo/ohmyfood@2x.svg" alt="logo oh my food">
+        </div>
+    </header>
+
+    <aside class="nav__location">
+        <p><i class="fa-solid fa-location-dot fa-fw" aria-hidden="true"></i>&nbsp; Paris, Belleville</p>
+    </aside>
+
+    <!--***** La Section Reserver *****-->
+
+    <section class="reservez">
+        <h1 class="reservez__title">Réservez le menu qui vous convient</h1>
+        <p class="reservez__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <a class="reservez__btn" href="#restaurants">Explorer nos restaurants</a>
+    </section>
+
+    <!--***** La Section Fonctionnement *****-->
+
+    <section class="fonctionnement">
+        <div class="grid">
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
+            <div class="fonctionnement__wrap">
+                <div class="fonctionnement__btn">
+                    <div class="fonctionnement__btn__numberBox">
+                        <span class="fonctionnement__btn__numberBox--number">1</span>
+                    </div>
+                    <i class="fonctionnement__btn__logo fa-solid fa-mobile-screen-button fa-lg"></i>
+                    <p class="fonctionnement__btn__text">Choisissez un restaurant</p>
+                </div>
+                <div class="fonctionnement__btn">
+                    <div class="fonctionnement__btn__numberBox">
+                        <span class="fonctionnement__btn__numberBox--number">2</span>
+                    </div>
+                    <i class="fonctionnement__btn__logo fa-sharp fa-solid fa-list-ul fa-lg"></i>
+                    <p class="fonctionnement__btn__text">Composez votre menu</p>
+                </div>
+                <div class="fonctionnement__btn">
+                    <div class="fonctionnement__btn__numberBox">
+                        <span class="fonctionnement__btn__numberBox--number">3</span>
+                    </div>
+                    <i class="fonctionnement__btn__logo fa-sharp fa-solid fa-store fa-lg"></i>
+                    <p class="fonctionnement__btn__text">Dégustez au restaurant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--***** La Section Restaurants *****-->
+
+    <section class="restaurants" id="restaurants">
+        <div class="grid">
+            <h2 class="restaurants__title">Restaurants</h2>
+            <div class="restaurants__wrap">
+                <a class="card" href="./restaurants/la_palette.html">
+                    <img class="card__img" src="./assets/images/restaurants/palette-mini.jpg" alt="plat d'une restaurant">
+                    <span class="card__nouveau">Nouveau</span>
+                    <h3 class="card__title">La palette du goût</h3>
+                    <p class="card__subtitle">Ménilmontant</p>
+                    <span class="card__icon"></span>
+                </a> 
+                <a class="card" href="./restaurants/la_note.html">
+                    <img class="card__img" src="./assets/images/restaurants/note-mini.jpg" alt="plat d'une restaurant">
+                    <span class="card__nouveau">Nouveau</span>
+                    <h3 class="card__title">La note enchantée</h3>
+                    <p class="card__subtitle">Charonne</p>
+                    <span class="card__icon"></span>
+                </a>
+                <a class="card" href="./restaurants/la_francaise.html">
+                    <img class="card__img" src="./assets/images/restaurants/francaise-mini.jpg" alt="plat d'une restaurant">
+                    <h3 class="card__title">À la française</h3>
+                    <p class="card__subtitle">Cité Rouge</p>
+                    <span class="card__icon"></span>
+                </a>
+                <a class="card" href="./restaurants/le_delice.html">
+                   <img class="card__img" src="./assets/images/restaurants/delice-mini.jpg" alt="plat d'une restaurant">
+                    <h3 class="card__title">Le délice des sens</h3>
+                    <p class="card__subtitle">Folie-Méricourt</p>
+                    <span class="card__icon"></span>
+                </a> 
+            </div>
+        </div>
+    </section>
+
+    <!--***** Le Footer *****-->
+
+    <footer class="footer">
+        <div class="grid">
+            <h4 class="footer__title">ohmyfood</h4>
+            <ul class="footer__list">
+                <li class="footer__list--grand">
+                    <a href=""><img src="./assets/images/icon/fork-knife.svg" alt="logo de fouchette et couteau">&nbsp; Proposer un restaurant</a>
+                </li>
+                <li class="footer__list--grand">
+                    <a href=""><img src="./assets/images/icon/handshake.svg" alt="logo de poignee de main">&nbsp; Devenir partenaire</a>
+                </li>
+                <li class="footer__list--petit">
+                    <a href="">Mentions légales</a>
+                </li>
+                <li class="footer__list--petit">
+                    <a href="mailto:contact@ohmyfood.fr">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

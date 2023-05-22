@@ -1,0 +1,22 @@
+@use '../util/' as u;
+
+/*----- Restaurants -----*/
+.restaurants {
+    &__title {
+       padding-top: u.rem(54);
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: u.rem(18);
+        padding-top: u.rem(28);
+        padding-bottom: u.rem(66);
+        @include u.breakpoint(medium) {
+            padding-bottom: u.rem(30);
+            grid-template-columns: 1fr 1fr;
+            column-gap: u.rem(100);
+            row-gap: u.rem(50);
+        }
+    }
+}

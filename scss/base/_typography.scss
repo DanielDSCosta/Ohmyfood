@@ -1,0 +1,37 @@
+@use '../util/' as u;
+
+/*----- Typographie -----*/
+h1 {
+    font-weight: 700;
+    font-size: u.rem(24);
+    line-height: u.rem(28.13);
+}
+
+h2 {
+    font-size: u.rem(24);
+}
+
+h4 {
+    font-size: u.rem(18);
+    font-family: u.$font-shirkhand;
+    font-weight: 400;
+    line-height: u.rem(26.24);
+}
+
+.reservez p {
+    font-weight: 300;
+    font-size: u.rem(18);
+    line-height: u.rem(21.09);
+}
+
+.card h3 {
+    font-weight: 700; 
+    font-size: u.rem(18);
+    line-height: u.rem(21.09);
+}
+
+.card p {
+    font-weight: 300;
+    font-size: u.rem(17);
+    line-height: u.rem(19.92);
+}
