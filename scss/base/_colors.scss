@@ -1,13 +1,17 @@
 /*----- Couleurs -----*/
-$black: #000000;
-$white: #FFFFFF;
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
     
-$background-color: #F7F7F7;
-$background-grey-light: #EAEAEA;
-$background-grey-dark : #353535;
+    --background-color: #F7F7F7;
+    --background-grey-light: #EAEAEA;
+    --background-grey-dark : #353535;
     
-$btn-purple-dark: #9356DC;
-$btn-purple-light: #FF79DA;
-$btn-icone-grey: #7E7E7E;
-$btn-green-light: #99E2D0;
-$btn-green-dark: #008766;
+    --btn-purple-dark: #9356DC;
+    --btn-purple-light: #FF79DA;
+    --btn-icone-grey: #7E7E7E;
+    --btn-green-light: #99E2D0;
+    --btn-green-dark: #008766;
+    
+    background-color: var(--white);
+}
