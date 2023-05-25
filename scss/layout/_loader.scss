@@ -1,0 +1,33 @@
+/* Loader */
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letters{
+    color: var(--btn-purple-dark);
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+   0%{
+    color: var(--btn-purple-light);
+    text-shadow: 0 0 7px var(--btn-purple-light);
+   } 
+   90%{
+    color:var(--btn-purple-dark);
+    text-shadow: none;
+   }
+   100%{
+    color: var(--btn-purple-light);
+    text-shadow: 0 0 7px var(--btn-purple-light);
+   }
+}
