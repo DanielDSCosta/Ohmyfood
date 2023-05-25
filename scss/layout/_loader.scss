@@ -11,6 +11,8 @@
     background: var(--background-grey-dark);
     top: 0;
     z-index: 100;
+    animation: hideAnimation 0s ease-in 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .letters{
@@ -20,6 +22,14 @@
     margin-bottom: 150px;
     animation: flash 1.5s linear infinite;
     font-family: font-shirkhand;
+}
+
+@keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
 }
 
 @keyframes flash {
